@@ -1,0 +1,33 @@
+/* products.css */
+
+.product-link {
+    text-decoration: none;
+    color: inherit;
+    outline: none; /* Remove the blue outline on click/focus */
+  }
+  
+  .custom-card {
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out;
+    margin-bottom: 20px;
+  
+    &:hover {
+      transform: scale(1.05);
+    }
+  }
+  
+  .card-image {
+    object-fit: cover;
+    height: 200px;
+  }
+  
+  .card-title {
+    margin-bottom: 10px;
+  }
+  
+  .card-price {
+    color: #007bff;
+  }
+  

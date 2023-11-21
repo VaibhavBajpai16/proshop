@@ -10,25 +10,16 @@ const HomeScreen = () => {
   return (
     <>
       <ProductCarousel />
-
-      {isLoading ? (
-        <Loader />
-      ) : error ? (
-        <Message variant="danger">
-          {error?.data?.message || error.error}
-        </Message>
-      ) : (
-        <>
-          <h1>Latest Products</h1>
-          <Row>
-            {product?.map((productItem, index) => (
-              <Col key={index} sm={12} md={6} lg={4} xl={3}>
-                <Product productData={productItem} />
-              </Col>
-            ))}
-          </Row>
-        </>
-      )}
+      <>
+        <h1 className="latest-products-heading">Latest Products</h1>
+        <Row>
+          {product?.map((productItem, index) => (
+            <Col key={index} sm={12} md={6} lg={4} xl={3}>
+              <Product productData={productItem} />
+            </Col>
+          ))}
+        </Row>
+      </>
     </>
   );
 };

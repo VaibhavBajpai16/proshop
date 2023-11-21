@@ -125,7 +125,7 @@ const ProductScreen = () => {
                     disabled={product.countInStock === 0}
                     onClick={() => {
                       //addtoCartHandler();
-                      addtoCartHandler2();
+                      addtoCartHandler();
                     }}
                   >
                     Add To Cart
